@@ -1,0 +1,24 @@
+[QC2019-08-02 00:00:22] INFO [main] cn.xiaosheng996.NettyProtobufTcpServer.NettyTcpServer.start(60) | Netty Tcp Server started..
+[QC2019-08-02 00:00:31] INFO [nioEventLoopGroup-3-1] cn.xiaosheng996.NettyProtobufTcpServer.ServerHandler.channelActive(51) | [/127.0.0.1:22062] connected
+[QC2019-08-02 00:15:20] ERROR [nioEventLoopGroup-3-1] cn.xiaosheng996.NettyProtobufTcpServer.ServerHandler.exceptionCaught(87) | handle packet from [005056fffec00008-000010d8-00000001-4db47430b7654dce-31351749] failed!
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:367)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:118)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:610)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:551)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:465)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:437)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Unknown Source)
+[QC2019-08-02 21:35:55] INFO [main] cn.xiaosheng996.NettyProtobufTcpServer.NettyTcpServer.start(58) | Netty Tcp Server started..
+[QC2019-08-02 21:36:08] INFO [nioEventLoopGroup-3-1] cn.xiaosheng996.NettyProtobufTcpServer.ServerHandler.channelActive(33) | [/127.0.0.1:32575] connected
+[QC2019-08-02 21:40:07] INFO [main] cn.xiaosheng996.NettyProtobufTcpServer.NettyTcpServer.start(58) | Netty Tcp Server started..
+[QC2019-08-02 21:40:17] INFO [nioEventLoopGroup-3-1] cn.xiaosheng996.NettyProtobufTcpServer.ServerHandler.channelActive(33) | [/127.0.0.1:32723] connected
